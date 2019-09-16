@@ -1,4 +1,4 @@
-﻿/*============================================================================== 
+/*============================================================================== 
  Copyright (c) 2016-2017 PTC Inc. All Rights Reserved.
  
  Copyright (c) 2012-2015 Qualcomm Connected Experiences, Inc. All Rights Reserved. 
@@ -18,7 +18,7 @@ public class VirtualButtonEventHandler : MonoBehaviour,
 	#region PUBLIC_MEMBERS
 	
 	public float m_ButtonReleaseTimeDelay;
-	public GameObject wand;
+	public Animator wand;
 	#endregion // PUBLIC_MEMBERS
 
 	#region PRIVATE_MEMBERS
@@ -35,6 +35,8 @@ public class VirtualButtonEventHandler : MonoBehaviour,
 		{
 			virtualButtonBehaviours[i].RegisterEventHandler(this);
 		}
+        wand.GetComponent<Animator>();
+		
 	}
 
 	#endregion // MONOBEHAVIOUR_METHODS
@@ -53,7 +55,8 @@ public class VirtualButtonEventHandler : MonoBehaviour,
 		StopAllCoroutines();
 
 		BroadcastMessage("HandleVirtualButtonPressed", SendMessageOptions.DontRequireReceiver);
-		wand.GetComponent<Animator>().Play("RotationAndAppearing");
+		wand.Play("RotationAndAppearing");
+		wand.GetComponent<AudioSource>().Play();
 	}
 
 	/// <summary>
@@ -65,7 +68,7 @@ public class VirtualButtonEventHandler : MonoBehaviour,
 
 
 		StartCoroutine(DelayOnButtonReleasedEvent(m_ButtonReleaseTimeDelay, vb.VirtualButtonName));
-		wand.GetComponent<Animator>().Play("none");
+		
 	}
 	#endregion //PUBLIC_METHODS
 
