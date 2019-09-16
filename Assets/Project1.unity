@@ -5997,7 +5997,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: HarryFront
+  mTrackableName: HarryFront_scaled
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Project1.xml
@@ -7006,7 +7006,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'HarryBackMaterial
+  m_Name: 'HarryBack_scaledMaterial
 
     15794'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
@@ -7021,7 +7021,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: c182614272eb44068a03d84d92924c13, type: 3}
+        m_Texture: {fileID: 2800000, guid: d24ed5b90c1d45f29292aefcc6b75b31, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -7548,7 +7548,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031633599}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.317, y: 0.052, z: -0.432}
+  m_LocalPosition: {x: -0.281, y: 0.052, z: -0.396}
   m_LocalScale: {x: 0.0728571, y: 0.03928576, z: 4.3650846}
   m_Children: []
   m_Father: {fileID: 354421130}
@@ -8235,7 +8235,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1247258650}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.14400004, y: 0.0010000002, z: 0.09100002}
+  m_LocalPosition: {x: -0.14400004, y: 0.0010000002, z: 0.09100008}
   m_LocalScale: {x: 0.2, y: 1, z: 0.2}
   m_Children:
   - {fileID: 679595786}
@@ -8328,7 +8328,7 @@ MonoBehaviour:
     e20: 0
     e21: 0
     e22: 0.045818202
-    e23: 0.031847283
+    e23: 0.0318473
     e30: 0
     e31: 0
     e32: 0
@@ -8858,7 +8858,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: HarryBack
+  mTrackableName: HarryBack_scaled
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Project1.xml
@@ -9073,7 +9073,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'HarryFrontMaterial
+  m_Name: 'HarryFront_scaledMaterial
 
     15608'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
@@ -9088,7 +9088,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: c61925e850f8437d8fb1330969f3f24e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7a91110d78be443ca084fcc179570867, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="HarryBack_scaled" size="0.150000 0.229940" />
+    <ImageTarget name="HarryFront_scaled" size="0.150000 0.229091" />
     <ImageTarget name="HarryBack" size="0.150000 0.229940" />
     <ImageTarget name="HarryFront" size="0.150000 0.229091" />
   </Tracking>
