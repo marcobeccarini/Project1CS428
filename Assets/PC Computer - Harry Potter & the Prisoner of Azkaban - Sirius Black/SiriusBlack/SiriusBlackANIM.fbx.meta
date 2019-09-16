@@ -21,12 +21,30 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Main' has import animation warnings that might
+      lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
+      retargeting quality.\n\t'Body__jaw' has translation animation that will be discarded.\n\t'Body__FrontalisRight'
+      has translation animation that will be discarded.\n\t'Body__FrontalisLeft' has
+      translation animation that will be discarded.\n\t'Body_lHand' has translation
+      animation that will be discarded.\n\t'Body_lFingerMid' has translation animation
+      that will be discarded.\n\t'Body_lFingerMidMid' has translation animation that
+      will be discarded.\n\t'Body_lFingerBackTop' has translation animation that will
+      be discarded.\n\t'Body_lFingerBackTop' is inbetween humanoid transforms and
+      has rotation animation that will be discarded.\n\t'Body_lFingerBackMid' has
+      translation animation that will be discarded.\n\t'body_rhand' has translation
+      animation that will be discarded.\n\t'Body_rThumb' has translation animation
+      that will be discarded.\n\t'Body_rFingerBackTop' has translation animation that
+      will be discarded.\n\t'Body_rFingerBackTop' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Body_rFingerBackMid'
+      has translation animation that will be discarded.\n\t'Body_rFingerMidTop' has
+      translation animation that will be discarded.\n\t'Body_rFingerMidTop' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'Body_rFingerMidMid'
+      has translation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -574,7 +592,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 3
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

@@ -67,9 +67,8 @@
     <Compile Include="Assets\Scripts\VirtualButtonEventHandler.cs" />
     <None Include="Assets\PC Computer - Harry Potter &amp; the Prisoner of Azkaban - Buckbeak\README IMPORTANT.txt" />
     <None Include="Assets\PC Computer - Harry Potter &amp; the Prisoner of Azkaban - Monster Book of Monsters\README IMPORTANT.txt" />
-    <None Include="Assets\StreamingAssets\Vuforia\Project1.xml" />
     <None Include="Assets\PC Computer - Harry Potter &amp; the Prisoner of Azkaban - Sirius Black\README IMPORTANT.txt" />
-    <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Images.xml" />
+    <None Include="Assets\StreamingAssets\Vuforia\Project1.xml" />
     <None Include="Assets\PC Computer - Harry Potter &amp; the Prisoner of Azkaban - Harry Potter\README IMPORTANT.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/Marco/Desktop/Unity/Project1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
