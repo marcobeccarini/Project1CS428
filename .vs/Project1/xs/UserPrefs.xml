@@ -1,19 +1,14 @@
 ﻿<Properties StartupConfiguration="{75AC4C40-F16B-156B-5A80-9157E3301C82}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/VirtualButtonEventHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Shapes2D/readme.txt">
     <Files>
-      <File FileName="Assets/Scripts/TranslateButtonEventHandler.cs" Line="5" Column="34" />
-      <File FileName="Assets/Scripts/VirtualButtonEventHandler.cs" Line="39" Column="3" />
+      <File FileName="Assets/Scripts/TranslateButtonEventHandler.cs" Line="48" Column="16" />
+      <File FileName="Assets/Scripts/VirtualButtonEventHandler.cs" Line="6" Column="1" />
+      <File FileName="Assets/Shapes2D/readme.txt" Line="3" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Project1" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="VirtualButtonEventHandler.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="Project1" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
