@@ -3,7 +3,6 @@
  
  Copyright (c) 2012-2015 Qualcomm Connected Experiences, Inc. All Rights Reserved. 
  * ==============================================================================*/
-using System.Collections;
 using UnityEngine;
 using Vuforia;
 
@@ -17,8 +16,11 @@ public class VirtualButtonEventHandler : MonoBehaviour,
 {
 	#region PUBLIC_MEMBERS
 	
-	public float m_ButtonReleaseTimeDelay;
 	public Animator wand;
+	public AudioSource audioENG;
+	public AudioSource audioITA;
+	public AudioSource audioHINDI;
+	
 	#endregion // PUBLIC_MEMBERS
 
 	#region PRIVATE_MEMBERS
@@ -50,13 +52,21 @@ public class VirtualButtonEventHandler : MonoBehaviour,
 	{
 		Debug.Log("OnButtonPressed: " + vb.VirtualButtonName);
 
+        if(audioENG.isPlaying || audioHINDI.isPlaying || audioITA.isPlaying)
+		{
+			audioENG.Stop();
+			audioITA.Stop();
+			audioHINDI.Stop();
+			
+		}
+
+		else
+		{
+			wand.Play("RotationAndAppearing");
+			audioENG.Play();
+		}
 		
-
-		StopAllCoroutines();
-
-		BroadcastMessage("HandleVirtualButtonPressed", SendMessageOptions.DontRequireReceiver);
-		wand.Play("RotationAndAppearing");
-		wand.GetComponent<AudioSource>().Play();
+		
 	}
 
 	/// <summary>
@@ -65,22 +75,8 @@ public class VirtualButtonEventHandler : MonoBehaviour,
 	public void OnButtonReleased(VirtualButtonBehaviour vb)
 	{
 		Debug.Log("OnButtonReleased: " + vb.VirtualButtonName);
-
-
-		StartCoroutine(DelayOnButtonReleasedEvent(m_ButtonReleaseTimeDelay, vb.VirtualButtonName));
-		
 	}
 	#endregion //PUBLIC_METHODS
 
-
-	#region PRIVATE_METHODS
 	
-
-	IEnumerator DelayOnButtonReleasedEvent(float waitTime, string buttonName)
-	{
-		yield return new WaitForSeconds(waitTime);
-
-		BroadcastMessage("HandleVirtualButtonReleased", SendMessageOptions.DontRequireReceiver);
-	}
-	#endregion // PRIVATE METHODS
 }

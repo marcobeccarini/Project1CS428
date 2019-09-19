@@ -65,6 +65,7 @@
     <Compile Include="Assets\Shapes2D\Editor\CustomHandles.cs" />
     <Compile Include="Assets\Shapes2D\Editor\MenuItems.cs" />
     <Compile Include="Assets\Shapes2D\Editor\ShapeEditor.cs" />
+    <None Include="Assets\Editor\Vuforia\CylinderTargetTextures\VuforiaMars_Images\authoringinfo.xml" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>/Users/Marco/Desktop/Unity/Project1/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>

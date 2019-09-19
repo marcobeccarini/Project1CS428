@@ -64,7 +64,8 @@
   <ItemGroup>
     <Compile Include="Assets\Lamp Post\LightFlicker.cs" />
     <Compile Include="Assets\Lamp Post\LightFlickerStartOFF.cs" />
-    <Compile Include="Assets\Scripts\TranslateButtonEventHandler.cs" />
+    <Compile Include="Assets\Scripts\HindiButtonEventHandler.cs" />
+    <Compile Include="Assets\Scripts\ItalianButtonEventHandler.cs" />
     <Compile Include="Assets\Scripts\VirtualButtonEventHandler.cs" />
     <Compile Include="Assets\Shapes2D\Demos\DragCamera.cs" />
     <Compile Include="Assets\Shapes2D\Demos\Flappy Shapes\Bird.cs" />
@@ -83,7 +84,6 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\PC Computer - Harry Potter &amp; the Prisoner of Azkaban - Buckbeak\README IMPORTANT.txt" />
     <None Include="Assets\Shapes2D\changelog.txt" />
-    <None Include="Assets\PC Computer - Harry Potter &amp; the Prisoner of Azkaban - Monster Book of Monsters\README IMPORTANT.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Shapes2D\Shaders\Path.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -92,6 +92,8 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Images.xml" />
+    <None Include="Assets\PC Computer - Harry Potter &amp; the Prisoner of Azkaban - Remus Lupin Werewolf\README IMPORTANT.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\StreamingAssets\Vuforia\Project1.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
