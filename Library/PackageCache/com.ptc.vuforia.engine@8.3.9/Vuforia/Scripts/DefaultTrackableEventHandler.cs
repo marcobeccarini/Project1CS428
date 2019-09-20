@@ -17,17 +17,15 @@ using Vuforia;
 /// </summary>
 public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
 {
-	public AudioSource audioENG;
-	public AudioSource audioITA;
-	public AudioSource audioHINDI;
-	public AudioSource audioFlicker;
+    #region PROTECTED_MEMBER_VARIABLES
 
-	#region PROTECTED_MEMBER_VARIABLES
-
-	protected TrackableBehaviour mTrackableBehaviour;
+    protected TrackableBehaviour mTrackableBehaviour;
     protected TrackableBehaviour.Status m_PreviousStatus;
     protected TrackableBehaviour.Status m_NewStatus;
-
+	public AudioSource LightFlicker;
+	public AudioSource WandENGLISH;
+	public AudioSource WandITALIAN;
+	public AudioSource WandHINDI;
     #endregion // PROTECTED_MEMBER_VARIABLES
 
     #region UNITY_MONOBEHAVIOUR_METHODS
@@ -90,6 +88,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingFound()
     {
+		LightFlicker.Play();
         if (mTrackableBehaviour)
         {
             var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);
@@ -113,6 +112,10 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingLost()
     {
+		LightFlicker.Stop();
+		WandENGLISH.Pause();
+		WandITALIAN.Pause();
+		WandHINDI.Pause();
         if (mTrackableBehaviour)
         {
             var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);
@@ -130,13 +133,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             // Disable canvas':
             foreach (var component in canvasComponents)
                 component.enabled = false;
-
-			audioENG.Stop();
-			audioITA.Stop();
-			audioHINDI.Stop();
-			audioFlicker.Stop();
-
-
         }
     }
 
