@@ -84,6 +84,7 @@ public class ItalianButtonEventHandler : MonoBehaviour, IVirtualButtonEventHandl
                     SottotitoloHindi.SetActive(false);
                     audioITA.Stop();
                     audioHINDI.Stop();
+                    if (audioITA.isPlaying)
                     audioENG.Play();
 
 

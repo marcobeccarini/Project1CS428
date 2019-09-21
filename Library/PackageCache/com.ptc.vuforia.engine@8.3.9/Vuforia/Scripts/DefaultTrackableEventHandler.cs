@@ -22,12 +22,20 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     protected TrackableBehaviour mTrackableBehaviour;
     protected TrackableBehaviour.Status m_PreviousStatus;
     protected TrackableBehaviour.Status m_NewStatus;
+	public AudioSource LightFlickering;
+	public AudioSource AudioSourceEng;
+	public AudioSource AudioSourceIta;
+    public AudioSource AudioSourceHindi;
+	public GameObject LampPost1;
+	public GameObject LampPost2;
+	public GameObject LampPost3;
+	public GameObject LampPost4;
+	public GameObject LampPost5;
+	#endregion // PROTECTED_MEMBER_VARIABLES
 
-    #endregion // PROTECTED_MEMBER_VARIABLES
+	#region UNITY_MONOBEHAVIOUR_METHODS
 
-    #region UNITY_MONOBEHAVIOUR_METHODS
-
-    protected virtual void Start()
+	protected virtual void Start()
     {
         mTrackableBehaviour = GetComponent<TrackableBehaviour>();
         if (mTrackableBehaviour)
@@ -85,7 +93,12 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingFound()
     {
-        if (mTrackableBehaviour)
+		LampPost1.SetActive(true);
+		LampPost2.SetActive(true);
+		LampPost3.SetActive(true);
+		LampPost4.SetActive(true);
+		LampPost5.SetActive(true);
+		if (mTrackableBehaviour)
         {
             var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);
             var colliderComponents = mTrackableBehaviour.GetComponentsInChildren<Collider>(true);
@@ -108,7 +121,16 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingLost()
     {
-        if (mTrackableBehaviour)
+		LightFlickering.Pause();
+		AudioSourceEng.Pause();
+		AudioSourceHindi.Pause();
+		AudioSourceIta.Pause();
+		LampPost1.SetActive(false);
+		LampPost2.SetActive(false);
+		LampPost3.SetActive(false);
+		LampPost4.SetActive(false);
+		LampPost5.SetActive(false);
+		if (mTrackableBehaviour)
         {
             var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);
             var colliderComponents = mTrackableBehaviour.GetComponentsInChildren<Collider>(true);

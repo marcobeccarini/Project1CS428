@@ -1,16 +1,28 @@
 ﻿<Properties StartupConfiguration="{75AC4C40-F16B-156B-5A80-9157E3301C82}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HindiBackButtonEventHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Lamp Post/LightFlickerStartOFF.cs">
     <Files>
-      <File FileName="Library/PackageCache/com.ptc.vuforia.engine@8.3.9/Vuforia/Shaders/VideoBackground.shader" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ReviewButtonEventHandler.cs" />
-      <File FileName="Library/PackageCache/com.ptc.vuforia.engine@8.3.9/Vuforia/Scripts/DefaultTrackableEventHandler.cs" />
-      <File FileName="Assets/Scripts/ItalianBackButtonEventHandler.cs" />
-      <File FileName="Assets/Scripts/HindiBackButtonEventHandler.cs" Line="91" Column="15" />
+      <File FileName="Assets/Scripts/BACKDefaultTrackableEventHandler.cs" Line="1" Column="1" />
+      <File FileName="Library/PackageCache/com.ptc.vuforia.engine@8.3.9/Vuforia/Scripts/DefaultTrackableEventHandler.cs" Line="119" Column="1" />
+      <File FileName="Library/PackageCache/com.ptc.vuforia.engine@8.3.9/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.XML" Line="4901" Column="43" />
+      <File FileName="Assets/Scripts/HindiButtonEventHandler.cs" Line="89" Column="1" />
+      <File FileName="Assets/Scripts/VirtualButtonEventHandler.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ItalianButtonEventHandler.cs" Line="88" Column="37" />
+      <File FileName="Assets/Lamp Post/LightFlickerStartOFF.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Project1" expanded="True" selected="True" />
+          <Node name="Project1" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Lamp Post" expanded="True">
+                <Node name="LightFlickerStartOFF.cs" selected="True" />
+              </Node>
+              <Node name="Scripts" expanded="True" />
+              <Node name="StreamingAssets" expanded="True">
+                <Node name="Vuforia" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
