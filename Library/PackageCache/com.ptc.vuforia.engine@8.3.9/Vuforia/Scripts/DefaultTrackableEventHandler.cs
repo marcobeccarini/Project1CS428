@@ -22,11 +22,11 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     protected TrackableBehaviour mTrackableBehaviour;
     protected TrackableBehaviour.Status m_PreviousStatus;
     protected TrackableBehaviour.Status m_NewStatus;
-	public AudioSource LightFlickering;
-	public AudioSource EnglishWand;
-	public AudioSource ItalianWand;
-	public AudioSource HindiWand;
 
+	public AudioSource LightFlickering;
+	public AudioSource ItalianWand;
+	public AudioSource EnglishWand;
+	public AudioSource HindiWand;
 
     #endregion // PROTECTED_MEMBER_VARIABLES
 
@@ -112,14 +112,11 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
 
     protected virtual void OnTrackingLost()
-
     {
-
 		LightFlickering.Pause();
-		EnglishWand.Pause();
 		ItalianWand.Pause();
+		EnglishWand.Pause();
 		HindiWand.Pause();
-
         if (mTrackableBehaviour)
         {
             var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);
