@@ -1,17 +1,15 @@
 ﻿<Properties StartupConfiguration="{75AC4C40-F16B-156B-5A80-9157E3301C82}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Library/PackageCache/com.ptc.vuforia.engine@8.3.9/Vuforia/Scripts/DefaultTrackableEventHandler.cs">
     <Files>
-      <File FileName="Library/PackageCache/com.ptc.vuforia.engine@8.3.9/Vuforia/Scripts/DefaultTrackableEventHandler.cs" Line="119" Column="21" />
+      <File FileName="Library/PackageCache/com.ptc.vuforia.engine@8.3.9/Vuforia/Scripts/DefaultTrackableEventHandler.cs" Line="129" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Project1" expanded="True">
-            <Node name="Assets" expanded="True">
+            <Node name="Assets" expanded="True" selected="True">
               <Node name="Lamp Post" expanded="True" />
-              <Node name="Scripts" expanded="True">
-                <Node name="HindiButtonEventHandler.cs" selected="True" />
-              </Node>
+              <Node name="Scripts" expanded="True" />
               <Node name="StreamingAssets" expanded="True">
                 <Node name="Vuforia" expanded="True" />
               </Node>
@@ -23,7 +21,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c973e966-bf24-485a-8d7e-a562275c49b0" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="030d8b07-7323-4cd5-afbe-53dcd6fbc4a6" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

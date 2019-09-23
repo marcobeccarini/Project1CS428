@@ -27,12 +27,16 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 	public AudioSource ItalianWand;
 	public AudioSource EnglishWand;
 	public AudioSource HindiWand;
+	public GameObject LampPost1;
+	public GameObject LampPost2;
+	public GameObject LampPost3;
+	public GameObject LampPost4;
+	public GameObject LampPost5;
+	#endregion // PROTECTED_MEMBER_VARIABLES
 
-    #endregion // PROTECTED_MEMBER_VARIABLES
+	#region UNITY_MONOBEHAVIOUR_METHODS
 
-    #region UNITY_MONOBEHAVIOUR_METHODS
-
-    protected virtual void Start()
+	protected virtual void Start()
     {
         mTrackableBehaviour = GetComponent<TrackableBehaviour>();
         if (mTrackableBehaviour)
@@ -90,7 +94,12 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingFound()
     {
-        if (mTrackableBehaviour)
+		LampPost1.SetActive(true);
+		LampPost2.SetActive(true);
+		LampPost3.SetActive(true);
+		LampPost4.SetActive(true);
+		LampPost5.SetActive(true);
+		if (mTrackableBehaviour)
         {
             var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);
             var colliderComponents = mTrackableBehaviour.GetComponentsInChildren<Collider>(true);
@@ -113,6 +122,11 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingLost()
     {
+		LampPost1.SetActive(false);
+		LampPost2.SetActive(false);
+		LampPost3.SetActive(false);
+		LampPost4.SetActive(false);
+		LampPost5.SetActive(false);
 		LightFlickering.Pause();
 		ItalianWand.Pause();
 		EnglishWand.Pause();
