@@ -1,17 +1,22 @@
 ﻿<Properties StartupConfiguration="{75AC4C40-F16B-156B-5A80-9157E3301C82}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Library/PackageCache/com.ptc.vuforia.engine@8.3.9/Vuforia/Scripts/DefaultTrackableEventHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LightFlicker.cs">
     <Files>
-      <File FileName="Library/PackageCache/com.ptc.vuforia.engine@8.3.9/Vuforia/Scripts/DefaultTrackableEventHandler.cs" Line="129" Column="28" />
+      <File FileName="Assets/Scripts/HindiBackButtonEventHandler.cs" Line="52" Column="3" />
+      <File FileName="Assets/Scripts/ItalianBackButtonEventHandler.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ReviewButtonEventHandler.cs" Line="51" Column="1" />
+      <File FileName="Library/PackageCache/com.ptc.vuforia.engine@8.3.9/Vuforia/Scripts/DefaultTrackableEventHandler.cs" Line="108" Column="1" />
+      <File FileName="Assets/Scripts/BACKDefaultTrackableEventHandler.cs" Line="1" Column="1" />
+      <File FileName="Assets/Lamp Post/LightFlickerStartOFF.cs" Line="38" Column="1" />
+      <File FileName="Assets/Scripts/DefaultTrackableEventHandler.cs" Line="1" Column="109" />
+      <File FileName="Assets/Scripts/LightFlicker.cs" Line="11" Column="25" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Project1" expanded="True">
-            <Node name="Assets" expanded="True" selected="True">
-              <Node name="Lamp Post" expanded="True" />
-              <Node name="Scripts" expanded="True" />
-              <Node name="StreamingAssets" expanded="True">
-                <Node name="Vuforia" expanded="True" />
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="LightFlicker.cs" selected="True" />
               </Node>
             </Node>
           </Node>

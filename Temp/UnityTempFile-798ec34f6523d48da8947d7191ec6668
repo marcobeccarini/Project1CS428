@@ -293,13 +293,14 @@
 /define:ENABLE_TIMELINE
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-"Assets/Lamp Post/LightFlicker.cs"
-"Assets/Lamp Post/LightFlickerStartOFF.cs"
 "Assets/Scripts/BACKDefaultTrackableEventHandler.cs"
+"Assets/Scripts/DefaultTrackableEventHandler.cs"
 "Assets/Scripts/HindiBackButtonEventHandler.cs"
 "Assets/Scripts/HindiButtonEventHandler.cs"
 "Assets/Scripts/ItalianBackButtonEventHandler.cs"
 "Assets/Scripts/ItalianButtonEventHandler.cs"
+"Assets/Scripts/LightFlicker.cs"
+"Assets/Scripts/LightFlickerStartOFF.cs"
 "Assets/Scripts/ReviewButtonEventHandler.cs"
 "Assets/Scripts/VirtualButtonEventHandler.cs"
 "Assets/Shapes2D/Demos/DragCamera.cs"

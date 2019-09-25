@@ -62,13 +62,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Lamp Post\LightFlicker.cs" />
-    <Compile Include="Assets\Lamp Post\LightFlickerStartOFF.cs" />
     <Compile Include="Assets\Scripts\BACKDefaultTrackableEventHandler.cs" />
+    <Compile Include="Assets\Scripts\DefaultTrackableEventHandler.cs" />
     <Compile Include="Assets\Scripts\HindiBackButtonEventHandler.cs" />
     <Compile Include="Assets\Scripts\HindiButtonEventHandler.cs" />
     <Compile Include="Assets\Scripts\ItalianBackButtonEventHandler.cs" />
     <Compile Include="Assets\Scripts\ItalianButtonEventHandler.cs" />
+    <Compile Include="Assets\Scripts\LightFlicker.cs" />
+    <Compile Include="Assets\Scripts\LightFlickerStartOFF.cs" />
     <Compile Include="Assets\Scripts\ReviewButtonEventHandler.cs" />
     <Compile Include="Assets\Scripts\VirtualButtonEventHandler.cs" />
     <Compile Include="Assets\Shapes2D\Demos\DragCamera.cs" />

@@ -4,29 +4,30 @@ using UnityEngine;
 
 
 
-public class LightFlicker : MonoBehaviour
+public class LightFlickerStartOFF : MonoBehaviour
 {
 
-public float timeOn = 0.08f;
-public float timeOff = 0.08f;
+public float timeOn ;
+public float timeOff ;
 private float changeTime = 0f;
 
 public Behaviour halo;
-    // Start is called before the first frame update
-    void Start()
-    {
+// Start is called before the first frame update
+void Start()
+{
+halo.enabled=false;
 
-    }
+}
 
-    // Update is called once per frame
-    void Update()
+// Update is called once per frame
+void Update()
 {
 
 if (Time.time > changeTime) {
 
 
 halo.enabled = !halo.enabled;
- }
+}
 if (halo.enabled) {
 changeTime = Time.time + timeOn;
 } else {
@@ -34,4 +35,3 @@ changeTime = Time.time + timeOff;
 }
 }
 }
-

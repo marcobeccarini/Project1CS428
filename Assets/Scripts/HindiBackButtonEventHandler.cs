@@ -56,7 +56,7 @@ public class HindiBackButtonEventHandler : MonoBehaviour, IVirtualButtonEventHan
 		if (EnglishReviews.activeSelf)
 		{
 			EnglishReviews.SetActive(false);
-			for (i = 0; i < 5; i++)
+			for (i = 0; i < 7; i++)
 			{
 				childrenHINDI[i].SetActive(false);
 			}
@@ -71,7 +71,7 @@ public class HindiBackButtonEventHandler : MonoBehaviour, IVirtualButtonEventHan
 		{
 			ItalianReviews.SetActive(false);
 			
-			for (i = 0; i < 5; i++)
+			for (i = 0; i < 7; i++)
 			{
 				childrenHINDI[i].SetActive(false);
 			}
@@ -84,7 +84,7 @@ public class HindiBackButtonEventHandler : MonoBehaviour, IVirtualButtonEventHan
 		{
 			EnglishReviews.SetActive(true);
 			HindiReviews.SetActive(false);
-			for (i = 0; i < 5; i++)
+			for (i = 0; i < 7; i++)
 			{
 				childrenENG[i].SetActive(false);
 			}

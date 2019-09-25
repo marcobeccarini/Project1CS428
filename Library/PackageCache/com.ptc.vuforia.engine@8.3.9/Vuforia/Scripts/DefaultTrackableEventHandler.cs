@@ -24,21 +24,24 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     protected TrackableBehaviour.Status m_NewStatus;
 
 	public AudioSource LightFlickering;
-	public AudioSource ItalianWand;
 	public AudioSource EnglishWand;
+	public AudioSource ItalianWand;
 	public AudioSource HindiWand;
-	public GameObject LampPost1;
-	public GameObject LampPost2;
-	public GameObject LampPost3;
-	public GameObject LampPost4;
-	public GameObject LampPost5;
+	public Behaviour halo1;
+	public Behaviour halo2;
+	public Behaviour halo3;
+	public Behaviour halo4;
+	public Behaviour halo5;
+	public Behaviour halo6;
+
 	#endregion // PROTECTED_MEMBER_VARIABLES
 
 	#region UNITY_MONOBEHAVIOUR_METHODS
 
 	protected virtual void Start()
     {
-        mTrackableBehaviour = GetComponent<TrackableBehaviour>();
+		LightFlickering.Play();
+		mTrackableBehaviour = GetComponent<TrackableBehaviour>();
         if (mTrackableBehaviour)
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
     }
@@ -94,11 +97,15 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingFound()
     {
-		LampPost1.SetActive(true);
-		LampPost2.SetActive(true);
-		LampPost3.SetActive(true);
-		LampPost4.SetActive(true);
-		LampPost5.SetActive(true);
+		
+		halo1.enabled = true;
+		halo2.enabled = true;
+		halo3.enabled = true;
+		halo4.enabled = true;
+		halo5.enabled = true;
+		halo6.enabled = true;
+		LightFlickering.Play();
+
 		if (mTrackableBehaviour)
         {
             var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);
@@ -122,16 +129,18 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingLost()
     {
-		LampPost1.SetActive(false);
-		LampPost2.SetActive(false);
-		LampPost3.SetActive(false);
-		LampPost4.SetActive(false);
-		LampPost5.SetActive(false);
+		halo1.enabled = false;
+		halo2.enabled = false;
+		halo3.enabled = false;
+		halo4.enabled = false;
+		halo5.enabled = false;
+		halo6.enabled = false;
 		LightFlickering.Pause();
-		ItalianWand.Pause();
 		EnglishWand.Pause();
+		ItalianWand.Pause();
 		HindiWand.Pause();
-        if (mTrackableBehaviour)
+		
+		if (mTrackableBehaviour)
         {
             var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);
             var colliderComponents = mTrackableBehaviour.GetComponentsInChildren<Collider>(true);

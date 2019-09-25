@@ -41,17 +41,17 @@ public class ReviewButtonEventHandler : MonoBehaviour, IVirtualButtonEventHandle
 
 		
 
-		for (i = 1; i < 5; i++)
+		for (i = 1; i < 7; i++)
 		{
 			childrenENG[i].SetActive(false);
 		}
 
-		for (i = 0; i < 5; i++)
+		for (i = 0; i < 7; i++)
 		{
 			childrenITA[i].SetActive(false);
 		}
 
-		for (i = 0; i < 5; i++)
+		for (i = 0; i < 7; i++)
 		{
 			childrenHINDI[i].SetActive(false);
 		}
@@ -75,7 +75,7 @@ public class ReviewButtonEventHandler : MonoBehaviour, IVirtualButtonEventHandle
             
 			childrenENG[i].SetActive(false);
 			i++;
-			if (i < 5)
+			if (i < 7)
 			{
 				childrenENG[i].SetActive(true);
 				
@@ -93,7 +93,7 @@ public class ReviewButtonEventHandler : MonoBehaviour, IVirtualButtonEventHandle
 		{
 			childrenITA[i].SetActive(false);
 			i++;
-			if (i < 5)
+			if (i < 7)
 			{
 				
 				childrenITA[i].SetActive(true);
@@ -114,7 +114,7 @@ public class ReviewButtonEventHandler : MonoBehaviour, IVirtualButtonEventHandle
 		{
 			childrenHINDI[i].SetActive(false);
 			i++;
-			if (i < 5)
+			if (i < 7)
 			{
 				
 				childrenHINDI[i].SetActive(true);
